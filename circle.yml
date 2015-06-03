@@ -8,4 +8,4 @@ dependencies:
 
 test:
   override:
-    - docker-compose run -d
+    - docker-compose up -d
