@@ -9,3 +9,8 @@ web:
    - redis
 redis:
   image: redis
+test:
+  build: ./test
+  links:
+    - web
+  command: python test.py
