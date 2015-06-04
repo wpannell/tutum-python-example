@@ -15,6 +15,6 @@ deployment:
     branch: master
     commands:
       - echo $TUTUM_REGISTRY_USER
-      - docker login -u $TUTUM_REGISTRY_USER -e $TUTUM_REGISTRY_EMAIL -p $TUTUM_REGISTRY_PASSWORD tutum.co
+      - docker login --username="$TUTUM_REGISTRY_USER" --email="$TUTUM_REGISTRY_EMAIL" --password="$TUTUM_REGISTRY_PASSWORD" tutum.co
       - docker tag tutumpythonexample_web tutum.co/jackfirth/tutumpythonexample_web
       - docker push tutum.co/jackfirth/tutumpythonexample_web
