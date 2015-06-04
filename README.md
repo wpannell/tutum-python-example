@@ -24,4 +24,4 @@ The CI lints code with `pep8`, runs unit tests on the app container code, then s
 
 # Deployment
 
-On successful runs on master, the app container image is pushed to Tutum and the running service is auto-redeployed. You can see the running app in "production" at http://web.tutum-python-example.jackfirth.svc.tutum.io. Note that redeployment of the app container has no effect on the count stored in Redis.
+On pushes to master that pass CI, the app container image is pushed to Tutum in CI and the running service is auto-redeployed by Tutum. You can see the running app in "production" at http://web.tutum-python-example.jackfirth.svc.tutum.io. Note that redeployment of the app container has no effect on the count stored in Redis.
