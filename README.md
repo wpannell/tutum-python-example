@@ -12,7 +12,7 @@ Once docker is installed, run `sudo pip install -U -r requirements.txt` from the
 
 # Running
 
-Run `docker-compose up` then go to `localhost:5000` in your browser (on OS X use the `boot2docker ip` instead of localhost).
+Run `docker-compose up web` then go to `localhost:5000` in your browser (on OS X use the `boot2docker ip` instead of localhost).
 
 # Testing
 
