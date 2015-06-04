@@ -9,7 +9,7 @@ dependencies:
 test:
   override:
     - pep8 .
-    - nose ./app
+    - nosetests ./app
     - docker-compose run test
 
 deployment:
