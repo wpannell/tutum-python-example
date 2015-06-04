@@ -9,3 +9,11 @@ dependencies:
 test:
   override:
     - docker-compose run test
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - docker login -u $TUTUM_REGISTRY_USER -e $TUTUM_REGISTRY_EMAIL -p $TUTUM_REGISTRY_PASSWORD tutum.co
+      - docker tag tutumpythonexample_web tutum.co/jackfirth/tutumpythonexample_web
+      - docker push tutum.co/jackfirth/tutumpythonexample_web
