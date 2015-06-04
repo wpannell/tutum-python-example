@@ -1,1 +1,3 @@
 docker-compose
+pep8
+nose
