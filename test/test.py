@@ -8,5 +8,11 @@ def assert_response(expected_response_body):
 
 
 if __name__ == "__main__":
-    assert_response("Hello World! I have been seen 1 times.")
-    assert_response("Hello World! I have been seen 2 times.")
+
+    assert_response('''Hello World!
+    I have been seen 1 times.
+    And this is updated code!''')
+
+    assert_response('''Hello World!
+    I have been seen 2 times.
+    And this is updated code!''')
