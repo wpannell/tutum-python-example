@@ -4,10 +4,12 @@ machine:
 
 dependencies:
   override:
-    - sudo pip install -U docker-compose
+    - sudo pip install -r requirements.txt
 
 test:
   override:
+    - pep8
+    - nosetests
     - docker-compose run test
 
 deployment:
