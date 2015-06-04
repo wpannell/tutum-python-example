@@ -10,8 +10,13 @@ def hello():
     redis.incr('hits')
     response = '''Hello World!
     I have been seen %s times.
-    And this is updated code!'''
-    return response % redis.get('hits')
+    I have been deployed %s times.'''
+    return response % (redis.get('hits'), redis.get('starts'))
+
+
+@app.before_first_request
+def before_first_request():
+    redis.incr('starts')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host='0.0.0.0')
