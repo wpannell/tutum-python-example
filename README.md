@@ -2,7 +2,7 @@
 
 Reference example Python web-app deployed with docker-compose and Tutum
 
-The app is a simple webserver that uses a Redis container to count how many times it's been visited. App container code is in `./app`, integration test container code is in `./test`.
+The app is a simple webserver that uses a Redis container to count how many times it's been visited and deployed. App container code is in `./app`, integration test container code is in `./test`.
 
 # Setup
 
